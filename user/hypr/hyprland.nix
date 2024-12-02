@@ -84,6 +84,12 @@
         "$modShift, K, movewindow, u"
         "$modShift, L, movewindow, r"
 
+        # Resize active window with $mod + arrow keys
+        "$mod, left, resizeactive, -30 0"
+        "$mod, right, resizeactive, 30 0"
+        "$mod, up, resizeactive, 0 -30"
+        "$mod, down, resizeactive, 0 30"
+
         # Scroll through workspacese with $mod + , / .
         "$mod, Comma, workspace, e-1"
         "$mod, Period, workspace, e+1"
