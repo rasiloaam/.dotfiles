@@ -14,6 +14,9 @@ return {
 		-- Make client capabilities
 		local capabilities = vim.lsp.protocol.make_client_capabilities()
 
+		-- Add capabilities
+		capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
+
 		-- Setup servers
 		for name, config in pairs(servers) do
 			-- Override only explicitly passed server configuration
