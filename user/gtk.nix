@@ -16,5 +16,10 @@
         accent = "frostblue1";
       };
     };
+    cursorTheme = {
+      size = 13;
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
+    };
   };
 }
