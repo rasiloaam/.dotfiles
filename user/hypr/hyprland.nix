@@ -71,6 +71,10 @@
         "$modShift, 3, movetoworkspacesilent, 3"
         "$modShift, 4, movetoworkspacesilent, 4"
         "$modShift, 5, movetoworkspacesilent, 5"
+
+        # Scroll through workspacese with $mod + , / .
+        "$mod, Comma, workspace, e-1"
+        "$mod, Period, workspace, e+1"
       ];
     };
   };
