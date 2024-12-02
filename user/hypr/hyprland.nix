@@ -98,6 +98,13 @@
         "$mod, N, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
         "$mod, M, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
       ];
+
+      # Mouse bindings
+      bindm = [
+        # Move / Resize active window with LMB / RMB
+        "$mod, mouse:272, movewindow"
+        "$mod, mouse:273, resizewindow"
+      ];
     };
   };
 }
