@@ -13,3 +13,8 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.signcolumn = "yes"
+
+-- Diagnostic configuration
+vim.diagnostic.config({
+	severity_sort = true,
+})
