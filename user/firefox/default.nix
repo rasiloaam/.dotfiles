@@ -1,11 +1,21 @@
-{lib, ...}: {
+{
+  lib,
+  pkgs,
+  ...
+}: {
   # Configure Firefox
   programs.firefox = {
     enable = true;
     profiles = {
       luna = {
         isDefault = true;
+        extensions = lib.attrValues (import ./addons.nix {
+          inherit (pkgs) lib fetchurl stdenv;
+        });
         settings = {
+          # Auto install extensions
+          "extensions.autoDisableScopes" = 0;
+
           # Disable crappy home activity stream page
           "browser.newtabpage.activity-stream.feeds.topsites" = false;
           "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
