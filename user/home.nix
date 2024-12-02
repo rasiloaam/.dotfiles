@@ -31,6 +31,7 @@
     gcc # Compiling
     wl-clipboard # Clipboard
     ripgrep # Fast recursive pattern matching
+    telegram-desktop # Telegram
   ];
 
   # This value determines the Home Manager release that your
