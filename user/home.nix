@@ -30,6 +30,7 @@
   # User packages
   home.packages = with pkgs; [
     gcc # Compiling
+    nemo # File manager
     wl-clipboard # Clipboard
     ripgrep # Fast recursive pattern matching
     telegram-desktop # Telegram
