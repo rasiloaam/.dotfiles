@@ -28,6 +28,7 @@
   # User packages
   home.packages = with pkgs; [
     wl-clipboard # Clipboard
+    ripgrep # Fast recursive pattern matching
   ];
 
   # This value determines the Home Manager release that your
