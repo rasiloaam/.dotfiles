@@ -105,6 +105,17 @@
         "$mod, mouse:272, movewindow"
         "$mod, mouse:273, resizewindow"
       ];
+
+      # Animations
+      animations = {
+        enabled = true;
+        animation = [
+          "global, 1, 3, default"
+          "workspaces, 0, 3, default"
+          "windowsIn, 1, 3, default, popin 70%"
+          "windowsOut, 1, 3, default, popin 70%"
+        ];
+      };
     };
   };
 }
