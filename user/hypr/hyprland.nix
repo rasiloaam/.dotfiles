@@ -53,6 +53,7 @@
       bind = [
         # Launch apps
         "$mod, B, exec, firefox"
+        "$mod, T, exec, telegram-desktop"
         "$mod, Return, exec, foot"
 
         # Manage active window
