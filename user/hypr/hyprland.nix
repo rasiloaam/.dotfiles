@@ -54,6 +54,7 @@
         # Launch apps
         "$mod, B, exec, firefox"
         "$mod, T, exec, telegram-desktop"
+        "$mod, F, exec, nemo"
         "$mod, Return, exec, foot"
 
         # Manage active window
