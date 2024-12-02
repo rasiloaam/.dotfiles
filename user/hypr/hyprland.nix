@@ -78,6 +78,12 @@
         "$mod, K, movefocus, u"
         "$mod, L, movefocus, r"
 
+        # Move active window with $modShift + H / J / K / L
+        "$modShift, H, movewindow, l"
+        "$modShift, J, movewindow, d"
+        "$modShift, K, movewindow, u"
+        "$modShift, L, movewindow, r"
+
         # Scroll through workspacese with $mod + , / .
         "$mod, Comma, workspace, e-1"
         "$mod, Period, workspace, e+1"
