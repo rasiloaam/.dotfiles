@@ -6,6 +6,9 @@
   # Configure Firefox
   programs.firefox = {
     enable = true;
+    policies = {
+      DisablePocket = true;
+    };
     profiles = {
       luna = {
         isDefault = true;
@@ -34,6 +37,21 @@
             # Twitter
             "T9nJot5PurhJSy8n038xGA=="
           ] (_: 1);
+
+          # Fully disable Pocket
+          "extensions.pocket.enabled" = false;
+          "extensions.pocket.api" = "0.0.0.0";
+          "extensions.pocket.loggedOutVariant" = "";
+          "extensions.pocket.oAuthConsumerKey" = "";
+          "extensions.pocket.onSaveRecs" = false;
+          "extensions.pocket.onSaveRecs.locales" = "";
+          "extensions.pocket.showHome" = false;
+          "extensions.pocket.site" = "0.0.0.0";
+          "browser.newtabpage.activity-stream.pocketCta" = "";
+          "browser.newtabpage.activity-stream.section.highlights.includePocket" =
+            false;
+          "services.sync.prefs.sync.browser.newtabpage.activity-stream.section.highlights.includePocket" =
+            false;
 
           # Layout
           "browser.uiCustomization.state" = builtins.toJSON {
