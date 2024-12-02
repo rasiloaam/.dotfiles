@@ -27,6 +27,7 @@
 
   # User packages
   home.packages = with pkgs; [
+    gcc # Compiling
     wl-clipboard # Clipboard
     ripgrep # Fast recursive pattern matching
   ];
