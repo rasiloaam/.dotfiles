@@ -56,6 +56,7 @@
         "$mod, T, exec, telegram-desktop"
         "$mod, F, exec, nemo"
         "$mod, Return, exec, foot"
+        "$modShift, Return, exec, fuzzel"
 
         # Manage active window
         "$mod, Q, killactive,"
